@@ -1,11 +1,12 @@
+print("Start Ball-Dice Game")
+print("Input")
 dice1 = int(input())
 dice2 = int(input())
-
-sum = dice1 + dice2
-
-if sum % 4 == 0:
-    print("%d is multiple of 2 and 4." % sum)
-elif sum % 2 == 0:
-    print("%d is multiple of 2." % sum)
+print("Game Result")
+if dice1 > dice2 :
+    print("1st User Win !")
+elif dice1 < dice2 :
+    print("2nd User Win !")
 else :
-    print("%d is not multiple of 2 or 4." % sum)
+    print("Draw")
+print("Stop Ball-Dice Game")
