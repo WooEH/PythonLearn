@@ -1,10 +1,11 @@
-n1 = int(input())
-n2 = int(input())
-n3 = int(input())
+dice1 = int(input())
+dice2 = int(input())
 
-n4 = n1
-n1 = n2
-n2 = n3
-n3 = n4
+sum = dice1 + dice2
 
-print(n1, n2, n3)
+if sum % 4 == 0:
+    print("%d is multiple of 2 and 4." % sum)
+elif sum % 2 == 0:
+    print("%d is multiple of 2." % sum)
+else :
+    print("%d is not multiple of 2 or 4." % sum)
