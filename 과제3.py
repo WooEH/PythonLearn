@@ -13,27 +13,40 @@ push_up = int(input())
 sit_up = int(input())
 gender = input()
 total = 0
-grade = "A"
+grade = ""
 
 if gender == "F":
     total = push_up * 0.4 + sit_up * 0.6
-else:
+    if 20 <= age <= 29:
+        if total >= 70:
+            grade = "A"
+        elif total >= 50:
+            grade = "B"
+        else:
+            grade = "C"
+    elif 10 <= age <= 19:
+        if total >= 60:
+            grade = "A"
+        elif total >= 40:
+            grade = "B"
+        else:
+            grade = "C"
+elif gender == "M":
     total = push_up * 0.6 + sit_up * 0.4
+    if 20 <= age <= 29:
+        if total >= 70:
+            grade = "A"
+        elif total >= 50:
+            grade = "B"
+        else:
+            grade = "C"
+    elif 10 <= age <= 19:
+        if total >= 60:
+            grade = "A"
+        elif total >= 40:
+            grade = "B"
+        else:
+            grade = "C"
 
-if age >= 20 and age <= 29 :
-    if total >= 70:
-        grade = "A"
-    elif total >= 50:
-        grade = "B"
-    else :
-        grade = "C"
-elif age >= 10 and age <=19 :
-    if total >= 60:
-        grade = "A"
-    elif total >= 40:
-        grade = "B"
-    else:
-        grade = "C"
-
-print("total = %d"%total)
+print("total = %d" % total)
 print(grade)
