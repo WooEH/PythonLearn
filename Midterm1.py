@@ -17,3 +17,4 @@ if res_sec >= 60:
     res_sec -= 60
 
 print("%dm %ds" %(res_min, res_sec))
+
